@@ -8,7 +8,7 @@
 
 # Conecta Jovem
 
-## RACCOON
+## <b>RACCOON</b>
 
 ## Integrantes: <a href="https://www.linkedin.com/in/%C3%A1lvaro-palazzin-053784271/">Álvaro Carvalho</a>, <a href="https://www.linkedin.com/in/dandaramonike/">Dandara Monike</a>, <a href="https://www.linkedin.com/in/leonardo-lamari-1b1464382/">Leonardo Lamari</a>, <a href="https://www.linkedin.com/in/luccas-covre/">Luccas Covre</a>
 
@@ -33,35 +33,30 @@ May the force be with you!
 
 ## 🛠 Estrutura de pastas
 
--Raiz<br>
-|<br>
-|-->documentos<br>
-  &emsp;|Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
+<b>-Raiz</b><br>
+<b>|-->documentos</b><br>
+  &emsp;|-->Documentação.docx<br>
+<b>|-->executáveis</b><br>
   &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
+<b>|-->imagens</b><br>
+<b>|-->src</b><br>
   &emsp;|-->Backend<br>
   &emsp;|-->Frontend<br>
-|readme.md<br>
+<b>|-->README.md</b><br>
 
 
 ## 🛠 Instalação
 
 <b>Android:</b>
 
-Faça o Download do JOGO.apk no seu celular. <br>
+Faça o Download do APP.apk no seu celular. <br>
 Execute o APK e siga as instruções de seu telefone.
 
 <br>
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-Para abrir este projeto você necessita das seguintes ferramentas: <br> (a incluir)
+Descrição de como instalar / Para abrir este projeto você necessita das seguintes ferramentas: <br> <b>(a incluir)</b>
 
 <br>
 
