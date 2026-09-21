@@ -10,13 +10,13 @@ Vide tutoriais do PI.
 <a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Nome do Projeto
+# Conecta Jovem
 
-## Nome do Grupo
+## RACCOON
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/%C3%A1lvaro-palazzin-053784271/">Álvaro Carvalho</a>, <a href="https://www.linkedin.com/in/dandaramonike/">Dandara Monike</a>, <a href="https://www.linkedin.com/in/leonardo-lamari-1b1464382/">Leonardo Lamari</a>, <a href="https://www.linkedin.com/in/luccas-covre/">Luccas Covre</a>
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>, <a href="https://www.linkedin.com/in/rodrigo-da-rosa-phd ">Rodrigo Rosa</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>, <a href="https://www.linkedin.com/in/jefferson-o-silva">Jefferson Silva</a>, <a href="https://www.linkedin.com/in/aimarlopes">Aimar Martins Lopes</a>
 
 ## Descrição
 
@@ -38,7 +38,6 @@ May the force be with you!
 -Raiz<br>
 |<br>
 |-->documentos<br>
-  &emsp;|-->antigos<br>
   &emsp;|Documentação.docx<br>
 |-->executáveis<br>
   &emsp;|-->windows<br>
@@ -50,19 +49,6 @@ May the force be with you!
   &emsp;|-->Frontend<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
-
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
-
-Há também 4 pastas que seguem da seguinte forma:
-
-<b>documentos</b>: Toda a documentação estará nesta pasta.
-
-<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
-
-<b>imagens</b>: Imagens do sistema
-
-<b>src</b>: Pasta que contém o código fonte.
 
 ## 🛠 Instalação
 
@@ -74,15 +60,10 @@ Execute o APK e siga as instruções de seu telefone.
 ```sh
 Coloque código do prompt de comnando se for necessário
 ```
-
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
 Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
 
 <b>HTML:</b>
 
@@ -104,15 +85,22 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 📋 Licença/License
-Utilize o link <https://chooser-beta.creativecommons.org/> para fazer uma licença CC BY 4.0.
+<p align="center">
+  <br>
+  <strong>ConectaJovem © 2026</strong> <br>
+  Desenvolvido por: <a href="https://github.com/DandaraDandara">Dandara Monike</a>, <a href="https://github.com/alvaro2003">Álvaro Carvalho</a>, <a href="https://github.com/LeonardoLamar12">Leonardo Lamari</a> e <a href="https://github.com/LuccasCovre">Luccas Covre</a>
+</p>
+
+<p align="center">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">
+    <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" />
+  </a>
+  <br>
+  <small>Este trabalho está licenciado sob uma <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Licença CC BY-ND 4.0</a></small>
+</p>
 
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://chooser-beta.creativecommons.org/>
-4. <https://freesound.org/>
-5. <https://www.toptal.com/developers/gitignore>
-6. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+1. <https://github.com/fecaphub/Template_PI>
