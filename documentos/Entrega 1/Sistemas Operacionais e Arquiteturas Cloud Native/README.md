@@ -83,6 +83,7 @@ Exemplo:
 ## Retenção de backups
 
 O terceiro parâmetro informado na execução define quantos backups mais recentes serão mantidos.
+
 Por exemplo:
 
 ```bash
@@ -108,8 +109,8 @@ Nesse caso, o script mantém os três backups mais recentes e remove os backups 
 └─ README.md
 ```
 
-`backup.sh`: script responsável pela execução dos backups.
-`README.md`: documentação do projeto.
+- `backup.sh`: script responsável pela execução dos backups.
+- `README.md`: documentação do projeto.
 
 ## Tratamento de erros
 
