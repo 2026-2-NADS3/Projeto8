@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ThirdActivity extends AppCompatActivity {
 
+    // Variaveis
     Button btn_04;
 
     @Override
@@ -25,8 +26,10 @@ public class ThirdActivity extends AppCompatActivity {
             return insets;
         });
 
+        // Pegando o Id
         btn_04 = findViewById(R.id.btn_04);
 
+        // Volta pra tela anterior
         btn_04.setOnClickListener(v -> {
             finish();
         });

@@ -7,8 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity"
     android:background="@color/cor3">
+    <!-- Cor de fundo da tela -->
 
-
+    <!-- Faixa colorida no topo da tela (funciona como "cabeçalho" atrás do nome do usuário) -->
     <TextView
         android:id="@+id/card"
         android:layout_width="match_parent"
@@ -21,7 +22,10 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!-- Sem texto: só serve de fundo/decoração. A margem negativa "puxa" ela
+         para cima, escondendo a borda superior arredondada atrás do topo da tela -->
 
+    <!-- Nome do usuário logado, preenchido no Java com o nome vindo da MainActivity -->
     <TextView
         android:id="@+id/title_03"
         android:layout_width="wrap_content"
@@ -34,7 +38,9 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!-- Texto inicial fixo, mas trocado por "Olá, [nome]" no código -->
 
+    <!-- Botão de menu (ícone ☰) que leva para a ThirdActivity -->
     <Button
         android:id="@+id/btn_config"
         android:layout_width="wrap_content"
@@ -46,7 +52,12 @@
         android:backgroundTint="@color/cor1"
         app:cornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent" />
+    <!-- cornerRadius bem alto deixa o botão redondo -->
+    <!-- Só está preso ao "End" (direita); sem constraint vertical ele
+         fica na posição padrão (topo), mas o ideal seria travar o Top também -->
 
+    <!-- "Card" grande que ocupa o resto da tela e serve de fundo para o
+         título, a foto e os 3 textos do conteúdo -->
     <TextView
         android:id="@+id/card_02"
         android:layout_width="match_parent"
@@ -61,7 +72,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card" />
+    <!-- Preso do lado esquerdo, direito e embaixo do "card" de cima -->
 
+    <!-- Título de cada página (ex: "Perfil", "Eventos", "Notificações") -->
     <TextView
         android:id="@+id/cardTitle"
         android:layout_width="wrap_content"
@@ -73,7 +86,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/card_02"/>
+    <!-- Curioso: o Bottom dele está preso ao Top do card_02, então esse título
+         fica ACIMA do card, colado na borda de cima dele -->
 
+    <!-- Foto de perfil (círculo), só aparece na página 1 (controlado no Java) -->
     <ImageView
         android:id="@+id/img_perfil"
         android:layout_width="110dp"
@@ -86,7 +102,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardTitle" />
+    <!-- clipToOutline + background oval = corta a foto em formato de círculo -->
+    <!-- centerCrop preenche o círculo todo sem distorcer a imagem -->
 
+    <!-- Primeira linha de texto do conteúdo da página -->
     <TextView
         android:id="@+id/cardText1"
         android:layout_width="match_parent"
@@ -99,7 +118,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_perfil"/>
+    <!-- Texto "Lorem ipsum" é só placeholder; é trocado no Java pelo array "textos" -->
+    <!-- Fica embaixo da foto de perfil -->
 
+    <!-- Segunda linha de texto do conteúdo -->
     <TextView
         android:id="@+id/cardText2"
         android:layout_width="match_parent"
@@ -112,7 +134,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardText1"/>
+    <!-- Fica embaixo do cardText1 -->
 
+    <!-- Terceira linha de texto do conteúdo -->
     <TextView
         android:id="@+id/cardText3"
         android:layout_width="match_parent"
@@ -125,7 +149,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardText2"/>
+    <!-- Fica embaixo do cardText2 -->
 
+    <!-- Botão "voltar página" (seta ❮), diminui a variável "pagina" no Java -->
     <Button
         android:id="@+id/btn_02"
         android:layout_width="58dp"
@@ -141,7 +167,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+    <!-- Preso ao Top e Bottom do parent ao mesmo tempo = fica centralizado
+         verticalmente na tela toda; preso à esquerda (Start) -->
 
+    <!-- Botão "avançar página" (seta ❯), aumenta a variável "pagina" no Java -->
     <Button
         android:id="@+id/btn_03"
         android:layout_width="58dp"
@@ -157,7 +186,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Mesma lógica do btn_02, mas preso à direita (End) -->
 
+    <!-- Indicador de página (bolinhas "○ ○ ○"), a bolinha cheia (●) marca
+         em qual página o usuário está, trocado no Java -->
     <TextView
         android:id="@+id/title_01"
         android:layout_width="wrap_content"
@@ -169,7 +201,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_02" />
-
-
+    <!-- Margem negativa "sobe" ele para dentro do card_02, perto da base -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
