@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity"
     android:background="@color/cor3">
+    <!-- Cor de fundo da tela -->
 
+    <!-- Título da tela de configurações -->
     <TextView
         android:id="@+id/title_04"
         android:layout_width="wrap_content"
@@ -20,8 +22,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!-- Preso em Start e End = fica centralizado horizontalmente -->
 
-
+    <!-- Primeira opção marcável (checkbox) -->
     <CheckBox
         android:id="@+id/checkBox_01"
         android:layout_width="wrap_content"
@@ -32,7 +35,9 @@
         android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_04"/>
+    <!-- Preso só à esquerda; fica embaixo do título -->
 
+    <!-- Segunda opção marcável -->
     <CheckBox
         android:id="@+id/checkBox_02"
         android:layout_width="wrap_content"
@@ -43,7 +48,9 @@
         android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox_01" />
+    <!-- Fica embaixo do checkBox_01 -->
 
+    <!-- Terceira opção marcável -->
     <CheckBox
         android:id="@+id/checkBox_03"
         android:layout_width="wrap_content"
@@ -54,7 +61,9 @@
         android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox_02" />
+    <!-- Fica embaixo do checkBox_02 -->
 
+    <!-- Quarta opção marcável -->
     <CheckBox
         android:id="@+id/checkBox_04"
         android:layout_width="wrap_content"
@@ -65,7 +74,11 @@
         android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox_03" />
+    <!-- Fica embaixo do checkBox_03 -->
+    <!-- Repare que nenhum dos 4 CheckBox tem uma "ação": eles só marcam/desmarcam
+         visualmente. Se quiser salvar o que foi marcado, precisa de código Java -->
 
+    <!-- Botão para voltar à tela anterior (SecondActivity) -->
     <Button
         android:id="@+id/btn_04"
         android:layout_width="wrap_content"
@@ -79,5 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
+    <!-- Preso em Start, End e Bottom = fica centralizado horizontalmente
+         e colado na parte de baixo da tela -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

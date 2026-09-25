@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Layout raiz da tela: ConstraintLayout permite posicionar os elementos
+     usando "constraints" (prender um elemento a outro ou às bordas da tela) -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,7 +9,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/cor3">
+    <!-- Cor de fundo da tela inteira -->
 
+    <!-- Parte "ET" do logo, em negrito -->
     <TextView
         android:id="@+id/title_01"
         android:layout_width="wrap_content"
@@ -20,7 +24,9 @@
         android:textColor="@color/cor1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!-- Preso no topo e na esquerda da tela -->
 
+    <!-- Parte "APP." do logo, em itálico -->
     <TextView
         android:id="@+id/title_02"
         android:layout_width="wrap_content"
@@ -32,7 +38,9 @@
         android:textColor="@color/cor6"
         app:layout_constraintStart_toEndOf="@+id/title_01"
         app:layout_constraintTop_toTopOf="parent" />
+    <!-- Preso logo depois do "ET", encostado nele -->
 
+    <!-- Campo de texto para o usuário digitar o nome -->
     <EditText
         android:id="@+id/input_01"
         android:layout_width="match_parent"
@@ -48,7 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_02" />
+    <!-- Ocupa a largura toda (menos as margens) e fica embaixo do "APP." -->
+    <!-- background dá a caixinha arredondada; padding afasta o texto da borda -->
 
+    <!-- Campo de texto para a senha, com os caracteres escondidos -->
     <EditText
         android:id="@+id/input_02"
         android:layout_width="match_parent"
@@ -65,7 +76,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_01" />
+    <!-- inputType="textPassword" faz aparecer bolinhas no lugar do texto digitado -->
 
+    <!-- Botão que leva para a próxima tela -->
     <Button
         android:id="@+id/btn_01"
         android:layout_width="wrap_content"
@@ -79,5 +92,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_02" />
+    <!-- Centralizado na horizontal (Start e End presos ao parent) e embaixo do campo de senha -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
