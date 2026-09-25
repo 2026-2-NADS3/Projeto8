@@ -34,9 +34,7 @@
 <p>
   <strong>Acompanhe por aqui todo o nosso processo de desenvolvimento do projeto!✨</strong>
 </p>
-
 <br>
-
 ## 🛠 Estrutura de pastas
 
 <b>-Raiz</b><br>
@@ -49,23 +47,17 @@
   &emsp;|-->Backend<br>
   &emsp;|-->Frontend<br>
 <b>|-->README.md</b><br>
-
-
-## 🛠 Instalação
-
-<b>Android:</b>
-
-Faça o Download do APP.apk no seu celular. <br>
-Execute o APK e siga as instruções de seu telefone.
-
 <br>
+## 🛠️ Instalação
 
-## 💻 Configuração para Desenvolvimento
+Para testar e executar a aplicação diretamente em um dispositivo Android sem precisar compilar o código:
 
-Descrição de como instalar / Para abrir este projeto você necessita das seguintes ferramentas: <br> <b>(a incluir)</b>
-
-<br>
-
+1. Acesse a pasta de entregas do repositório (ou a seção de Releases) e faça o download do arquivo `entrega1_mobile.apk`.
+2. Transfira o arquivo para o seu smartphone Android (ou abra no emulador).
+3. Permita a instalação de fontes desconhecidas nas configurações do dispositivo, se solicitado.
+4. Execute o arquivo `.apk` e siga as instruções na tela para concluir a instalação.
+  <br>
+  
 ## 📋 Licença/License
 <p align="center">
   <br>
