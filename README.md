@@ -35,6 +35,7 @@
   <strong>Acompanhe por aqui todo o nosso processo de desenvolvimento do projeto!✨</strong>
 </p>
 <br>
+
 ## 🛠 Estrutura de pastas
 
 <b>-Raiz</b><br>
