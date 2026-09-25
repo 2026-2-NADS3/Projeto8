@@ -25,12 +25,17 @@
 
 <!--![Descrição](imagens/Carrossel-banners.gif) -->
 
-(A incluir descrição montada)
-<br><br>
-<!--Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>-->
+<br>
+
+<p>
+  Como resposta ao desafio proposto pela ONG <strong>Próxima Etapa</strong>, nós do grupo <strong>Raccoon</strong> estamos realizando todo o processo de pesquisa e desenvolvimento para criar o <strong>Próxima Etapa – Conecta Jovem</strong>. Trata-se de um aplicativo mobile <strong>Android</strong> pensado para centralizar e transformar a jornada educacional de jovens de escolas públicas, oferecendo recursos como <strong>acompanhamento de cursos</strong>, <strong>registro de presença via QR Code</strong>, <strong>acesso a certificados</strong>, <strong>card digital</strong> e <strong>testes de orientação profissional</strong>, dentre outras funcionalidades pensadas para o usuário e solicitadas pelo cliente. Com essa solução integrada, nosso objetivo é aproximar os estudantes de suas oportunidades e metas, facilitando a comunicação com a organização e impulsionando cada jovem em direção aos seus objetivos acadêmicos e profissionais.
+</p>
+
+<p>
+  <strong>Acompanhe por aqui todo o nosso processo de desenvolvimento do projeto!✨</strong>
+</p>
+
+<br>
 
 ## 🛠 Estrutura de pastas
 
