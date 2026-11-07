@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS meuapp;
+CREATE USER IF NOT EXISTS 'appuser'@'localhost' IDENTIFIED BY 'appuser';
+GRANT ALL PRIVILEGES ON meuapp.* TO 'appuser'@'localhost';
+FLUSH PRIVILEGES;
+
+USE meuapp;
+CREATE TABLE IF NOT EXISTS contas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha_hash VARCHAR(100) NOT NULL
+);

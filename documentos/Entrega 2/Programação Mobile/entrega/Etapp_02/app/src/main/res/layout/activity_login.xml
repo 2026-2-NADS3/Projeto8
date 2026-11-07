@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Passo"
+                android:textColor="@color/preto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:text="Entrar"
+            android:textColor="@color/preto"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nome"
+            style="@style/Campo"
+            android:hint="Seu nome"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/Campo"
+            android:hint="voce@email.com"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/senha"
+            style="@style/Campo"
+            android:hint="Sua senha"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/confirma"
+            style="@style/Campo"
+            android:hint="Repita a senha"
+            android:inputType="textPassword"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/manter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/preto"
+            android:text="Manter-se conectado neste dispositivo"
+            android:textColor="@color/preto" />
+
+        <TextView
+            android:id="@+id/aviso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#C62828" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botao"
+            style="@style/Botao"
+            android:layout_marginTop="16dp"
+            android:text="Entrar" />
+
+        <TextView
+            android:id="@+id/trocar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Ainda não tem conta? Cadastre-se"
+            android:textColor="@color/preto"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
