@@ -42,13 +42,13 @@ A aplicação é composta por dois containers gerenciados pelo Docker Compose:
 
 ## Imagem Docker
  
-O `Dockerfile` do serviço de backup usa `ubuntu:24.04` como base. Ela foi escolhida por ser a distribuição utilizada na disciplina e por fornecer o pacote `mysql-client-8.0`, compatível com o servidor MySQL 8.4.
+O `Dockerfile` do serviço de backup usa `ubuntu:24.04` como base. Ela foi escolhida por por fornecer o pacote `mysql-client-8.0`, compatível com o servidor MySQL 8.4.
  
 Boas práticas aplicadas:
  
-- `--no-install-recommends` na instalação, instalando somente o necessário (cliente MySQL e `findutils`);
-- limpeza do cache do `apt` (`rm -rf /var/lib/apt/lists/*`) na mesma camada da instalação;
-- instalação de pacotes antes da cópia dos scripts, aproveitando o cache de camadas ao alterar apenas os scripts;
+- `--no-install-recommends` na instalação, instalando somente o necessário (cliente MySQL e `findutils`).
+- limpeza do cache do `apt` (`rm -rf /var/lib/apt/lists/*`) na mesma camada da instalação.
+- instalação de pacotes antes da cópia dos scripts, aproveitando o cache de camadas ao alterar apenas os scripts.
 - `.dockerignore` para evitar a cópia de arquivos desnecessários para a imagem.
 
 
@@ -79,8 +79,7 @@ Edite o `.env` e altere as senhas. As variáveis são:
 - `BACKUP_INTERVAL`: intervalo entre os backups, em segundos.
 - `RETENTION_COUNT`: quantidade de backups mais recentes a manter.
 
-O arquivo `.env` contém credenciais e está no `.gitignore`, portanto não deve ser enviado ao repositório. O `.env.example` serve de modelo, com valores de exemplo.
-
+O `.env.example` serve de modelo, com valores de exemplo.
 
 ## Como executar
  
@@ -216,7 +215,7 @@ Saída esperada:
 +----+-------+
 ```
  
-Os avisos `Using a password on the command line interface can be insecure` que o cliente `mysql` exibe nesses comandos de teste são esperados. O `backup.sh` não gera esses avisos, pois passa a senha pela variável `MYSQL_PWD`.
+Os avisos sobre a senha que o cliente `mysql` exibe nesses comandos de teste são esperados. O `backup.sh` não gera esses avisos, pois passa a senha pela variável `MYSQL_PWD`.
  
 ### 5. Persistência
  
