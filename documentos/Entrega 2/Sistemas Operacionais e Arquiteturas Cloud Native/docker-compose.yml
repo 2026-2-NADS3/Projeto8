@@ -1,0 +1,43 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: mysql-db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "--silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  backup:
+    depends_on:
+      db:
+        condition: service_healthy
+    build: ./backup
+    container_name: backup-service
+    restart: unless-stopped
+    volumes:
+      - backup_data:/backups
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      BACKUP_INTERVAL: ${BACKUP_INTERVAL}
+      RETENTION_COUNT: ${RETENTION_COUNT}
+
+volumes:
+  mysql_data:
+  backup_data:
