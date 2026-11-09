@@ -42,7 +42,7 @@ A aplicação é composta por dois containers gerenciados pelo Docker Compose:
 
 ## Imagem Docker
  
-O `Dockerfile` do serviço de backup usa `ubuntu:24.04` como base. Ela foi escolhida por por fornecer o pacote `mysql-client-8.0`, compatível com o servidor MySQL 8.4.
+O `Dockerfile` do serviço de backup usa `ubuntu:24.04` como base. Ela foi escolhida por fornecer o pacote `mysql-client-8.0`, compatível com o servidor MySQL 8.4.
  
 Boas práticas aplicadas:
  
